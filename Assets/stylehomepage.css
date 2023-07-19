@@ -62,15 +62,6 @@
     width: 109px ;
 }
 
-    /* main */
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     /* Section Hero */
 
     .hero {
@@ -107,6 +98,11 @@
 
     .functioning {
         background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
         
     }
 
