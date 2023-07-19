@@ -59,7 +59,55 @@
     background-color: transparent;
     font: 500 16px var(--text);
     color: var(--grey);
+    width: 109px ;
 }
 
+    /* Section Hero */
+
+    .hero {
+        text-align: center; 
+        
+    }
+
+    .book {
+        font: 24px;
+        width: 275px;
+        height: 68px; 
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .discover {
+        font: 300 18px var(--grey);
+        width: 315px;
+        height: 46px; 
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    #btn-explore {
+        width: 218px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        background: var(--button-gradient, linear-gradient(175deg,var(--secondaire) 0%, var(--primary) 100%));
+        color: var(--white);
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    .functioning {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        
+    }
+
+    .restaurants {
+    
+    }
 
 }
