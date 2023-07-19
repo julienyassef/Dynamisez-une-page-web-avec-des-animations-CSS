@@ -1,8 +1,27 @@
+/* général */
+
 * body {
     font-family: "roboto";
     
 }
 
-* .title, .logo {
+* .title {
     font-family: "shrikhand";
+}
+
+
+
+/* mobile version */
+
+@media screen and (max-width: 480px) {
+    
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    padding: 14px 19px 13px 16px;
+}
+
+
 }
