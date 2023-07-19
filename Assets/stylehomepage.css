@@ -18,9 +18,11 @@
     --text__logo-and-title: "shrikhand";
 }
 
-/* général: mobile first */
+/* mobile first */
 
 @media screen and (max-width: 480px) {
+
+    /* général */
 
 * body {
     margin: 0 auto;
@@ -36,6 +38,7 @@
 
 .logo-container {
     text-align: center;
+    background-color: var(--white);
 }
 
 .logo {
@@ -43,17 +46,19 @@
 }
 
 .location {
+    background-color:var(--grey-2);
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 19px; 
-    background-color:var(--grey-2);
-    height: 50px;
+    gap: 17px; 
 }
 
 .location__search {
     border: none;
     background-color: transparent;
+    font: 500 16px var(--text);
+    color: var(--grey);
 }
 
 
