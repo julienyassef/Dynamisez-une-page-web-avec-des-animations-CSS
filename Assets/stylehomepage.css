@@ -62,13 +62,18 @@
     width: 109px ;
 }
 
-    /* Section Hero */
+    /* main */
 
-    .hero {
+    .main-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Section Hero */
+
+    .hero {
         text-align: center; 
         
     }
@@ -98,6 +103,14 @@
         color: var(--white);
         border: none;
         margin-bottom: 50px;
+    }
+
+    .functioning {
+        background-color: var(--white);
+        
+    }
+
+    .restaurants {
     
     }
 
