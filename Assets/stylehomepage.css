@@ -23,5 +23,19 @@
     padding: 14px 19px 13px 16px;
 }
 
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px; 
+    background-color: aquamarine;
+    height: 50px;
+}
+
+.location__search {
+    border: none;
+    background-color: transparent;
+}
+
 
 }
