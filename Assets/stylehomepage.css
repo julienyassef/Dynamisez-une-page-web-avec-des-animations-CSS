@@ -1,7 +1,9 @@
 /* variables */
 :root {
-    --primary: #9356DC;
+
+    /* palette de coueleur */
     --background: #F6F6F6;
+    --primary: #9356DC;
     --green: #99E2D0;
     --green-font: #008766;
     --blue: #89C8FA;
@@ -9,19 +11,22 @@
     --grey: #353535;
     --grey-2: #EAEAEA;
     --white: #FFF;
- 
+
+    /* fonte-familly */
+    --text: "Roboto";
+    --text__logo-and-title: "shrikhand";
 }
 
 /* général */
 
 * body {
     margin: 0 auto;
-    font-family: "roboto";
+    font-family: var(--text);
     background-color: var(--background);
 }
 
 * .title {
-    font-family: "shrikhand";
+    font-family: var(--text__logo-and-title);
 }
 
 
@@ -29,7 +34,10 @@
 /* mobile version */
 
 @media screen and (max-width: 480px) {
+ 
     
+    /* header */
+
 .logo-container {
     text-align: center;
 }
@@ -43,7 +51,7 @@
     justify-content: center;
     align-items: center;
     gap: 19px; 
-    background-color: rgb(227, 255, 127);
+    background-color:var(--grey-2);
     height: 50px;
 }
 
