@@ -1,3 +1,16 @@
+/* variables */
+:root {
+     --green: #99E2D0;
+     --green-font: #008766;
+     --blue: #89C8FA;
+     --blue-2: #003A68; 
+     --primary: #9356DC;
+     --background: #F6F6F6;
+     --grey-2: #EAEAEA;
+     --white: #FFF;
+
+}
+
 /* général */
 
 * body {
@@ -28,7 +41,7 @@
     justify-content: center;
     align-items: center;
     gap: 19px; 
-    background-color: aquamarine;
+    background-color: rgb(227, 255, 127);
     height: 50px;
 }
 
