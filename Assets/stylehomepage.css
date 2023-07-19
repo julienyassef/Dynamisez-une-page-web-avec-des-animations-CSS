@@ -18,7 +18,9 @@
     --text__logo-and-title: "shrikhand";
 }
 
-/* général */
+/* général: mobile first */
+
+@media screen and (max-width: 480px) {
 
 * body {
     margin: 0 auto;
@@ -30,13 +32,6 @@
     font-family: var(--text__logo-and-title);
 }
 
-
-
-/* mobile version */
-
-@media screen and (max-width: 480px) {
- 
-    
     /* header */
 
 .logo-container {
