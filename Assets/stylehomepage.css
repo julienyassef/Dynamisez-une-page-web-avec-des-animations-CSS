@@ -73,7 +73,7 @@
         
     }
 
-    .reserver {
+    .book {
         font: 24px;
         width: 275px;
         height: 68px; 
@@ -81,12 +81,16 @@
         margin-top: 30px;
     }
 
-    .decouvrer {
+    .discover {
         font: 300 18px var(--grey);
         width: 315px;
         height: 46px; 
         margin: 0 auto;
         margin-bottom: 30px;
+    }
+
+    .btn-explore {
+
     }
 
 }
