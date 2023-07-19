@@ -9,14 +9,15 @@
     --grey: #353535;
     --grey-2: #EAEAEA;
     --white: #FFF;
-
+ 
 }
 
 /* général */
 
 * body {
+    margin: 0 auto;
     font-family: "roboto";
-    
+    background-color: var(--background);
 }
 
 * .title {
