@@ -34,6 +34,18 @@
     font-family: var(--text__logo-and-title);
 }
 
+.title__h2 {
+    margin-left: 20px;
+    padding-top: 48px;
+    padding-bottom: 15px;
+    font: 700 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #101010;
+}
+
     /* header */
 
 .logo__container {
@@ -105,12 +117,6 @@
         background-color: var(--white);
     }
 
-    .functioning__title__h2 {
-        margin-left: 20px;
-        padding-top: 48px;
-        padding-bottom: 15px;
-        font: 700 24px;
-    }
     .functioning__filter {
         display: flex;
         flex-direction: column;
@@ -164,6 +170,50 @@
         font-family: "roboto";
     }
 
+    /* section restaurants */
+
+    .restaurants__wrapper__card {
+        margin-left: 18px;
+        margin-right: 18px; 
+    }
+
+    .restaurants__card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--white);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 15px;
+    }
+
+    .restaurants__card img {
+        width: 100%; 
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .restaurants__card__content {
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        margin-left: 13px;
+    }
+
+    .card__title {
+        font-weight: 700;
+        margin: 12px 0px 12px 12px;
+    }
+
+    .card__locality {
+        font-size: 17px;
+        font-weight: 300;
+        margin: 5px 0px 12px 12px;
+    }
+
+    .card__heart {
+        position: absolute;
+        left: 85%;
+    }
 
 
 
