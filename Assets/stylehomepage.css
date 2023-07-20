@@ -96,8 +96,14 @@
         margin-bottom: 50px;
     }
 
+    /* section functioning */
+
     .functioning {
-        background-color: var(--white);
+    background-color: var(--white);
+
+    }
+
+    .functioning__filter {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -105,8 +111,11 @@
         gap: 15px;
     }
 
-    .title-h2 {
-    align-items: none;
+    .functioning__title__h2 {
+    margin-left: 20px;
+    padding-top: 48px;
+    padding-bottom: 15px;
+    font: 700 24px;
     }
 
     .restaurants {
