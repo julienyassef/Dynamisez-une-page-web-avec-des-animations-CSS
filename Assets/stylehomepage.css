@@ -233,12 +233,25 @@ footer {
 .footer__logo {
     display: block;
     font-family: var(--text__logo-and-title);
+    margin: 0px;
     font-size: 18px;
     font-weight: 400;
+}
+
+.footer__link {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
 .footer__link a {
     color: var(--white);
     font-weight: 500;
+}
+
+.footer__link__partainer, .footer__link__to-propose {
+    display: flex;
+    gap: 11px;
 }
 }
