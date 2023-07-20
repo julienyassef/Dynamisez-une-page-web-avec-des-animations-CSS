@@ -18,10 +18,6 @@
     --text__logo-and-title: "shrikhand";
 }
 
-/* mobile first */
-
-@media screen and (max-width: 480px) {
-
     /* général */
 
 * body {
@@ -253,5 +249,4 @@ footer {
 .footer__link__partainer, .footer__link__to-propose {
     display: flex;
     gap: 11px;
-}
 }
