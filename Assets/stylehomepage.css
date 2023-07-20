@@ -233,5 +233,12 @@ footer {
 .footer__logo {
     display: block;
     font-family: var(--text__logo-and-title);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__link a {
+    color: var(--white);
+    font-weight: 500;
 }
 }
