@@ -201,7 +201,7 @@ a {
 
     .card__title {
         font-weight: 700;
-        margin: 12px 0px 12px 12px;
+        margin: 12px 0px 0px 12px;
     }
 
     .card__locality {
