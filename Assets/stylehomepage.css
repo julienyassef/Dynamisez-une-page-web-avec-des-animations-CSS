@@ -18,10 +18,6 @@
     --text__logo-and-title: "shrikhand";
 }
 
-/* mobile first */
-
-@media screen and (max-width: 480px) {
-
     /* général */
 
 * body {
@@ -90,7 +86,8 @@ a {
     }
 
     .discover {
-        font: 300 18px var(--grey);
+        font: 300 18px;
+        color: var(--grey);
         width: 315px;
         height: 46px; 
         margin: 0 auto;
@@ -219,6 +216,38 @@ a {
         left: 85%;
     }
 
+/* footer */
 
+footer {
+    background-color: var(--grey);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    gap: 16px;
+}
 
+.footer__logo {
+    display: block;
+    font-family: var(--text__logo-and-title);
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__link {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer__link a {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.footer__link__partainer, .footer__link__to-propose {
+    display: flex;
+    gap: 11px;
 }
