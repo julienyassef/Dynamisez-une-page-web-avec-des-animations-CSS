@@ -86,7 +86,8 @@ a {
     }
 
     .discover {
-        font: 300 18px var(--grey);
+        font: 300 18px;
+        color: var(--grey);
         width: 315px;
         height: 46px; 
         margin: 0 auto;
