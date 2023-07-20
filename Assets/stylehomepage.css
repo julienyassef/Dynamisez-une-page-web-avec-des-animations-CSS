@@ -219,6 +219,19 @@ a {
         left: 85%;
     }
 
+/* footer */
 
+footer {
+    background-color: var(--grey);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    gap: 16px;
+}
 
+.footer__logo {
+    display: block;
+    font-family: var(--text__logo-and-title);
+}
 }
