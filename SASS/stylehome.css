@@ -29,8 +29,7 @@ a {
   text-align: center;
   background-color: #FFF;
 }
-
-.logoheader__logo {
+.logoheader .logoheader__logo {
   padding: 14px 19px 13px 16px;
 }
 
@@ -42,8 +41,7 @@ a {
   align-items: center;
   gap: 17px;
 }
-
-.location__search {
+.location .location__search {
   border: none;
   background-color: transparent;
   font: 500 16px var(--text);
@@ -54,16 +52,14 @@ a {
 .hero {
   text-align: center;
 }
-
-.hero__book {
+.hero .hero__book {
   font: 24px;
   width: 275px;
   height: 68px;
   margin: 0 auto;
   margin-top: 30px;
 }
-
-.hero__discover {
+.hero .hero__discover {
   font: 300 18px;
   color: #353535;
   width: 315px;
