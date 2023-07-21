@@ -29,7 +29,7 @@ a {
   text-align: center;
   background-color: #FFF;
 }
-.logoheader .logoheader__logo {
+.logoheader__logo {
   padding: 14px 19px 13px 16px;
 }
 
@@ -41,7 +41,7 @@ a {
   align-items: center;
   gap: 17px;
 }
-.location .location__search {
+.location__search {
   border: none;
   background-color: transparent;
   font: 500 16px var(--text);
@@ -52,14 +52,14 @@ a {
 .hero {
   text-align: center;
 }
-.hero .hero__book {
+.hero__book {
   font: 24px;
   width: 275px;
   height: 68px;
   margin: 0 auto;
   margin-top: 30px;
 }
-.hero .hero__discover {
+.hero__discover {
   font: 300 18px;
   color: #353535;
   width: 315px;
@@ -91,24 +91,24 @@ a {
 .functioning {
   background-color: #FFF;
 }
-.functioning .functioning__filter {
+.functioning__filter {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-bottom: 75px;
 }
-.functioning .functioning__filter .functioning__filter__wrapper {
+.functioning__filter__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 10px;
   margin-right: 15px;
 }
-.functioning .functioning__filter .functioning__filter__circle {
+.functioning__filter__circle {
   position: relative;
   transform: translateX(50%);
 }
-.functioning .functioning__filter .functioning__filter__circle .functioning__filter__circle__number {
+.functioning__filter__circle__number {
   position: absolute;
   top: 45%;
   left: 35%;
@@ -118,7 +118,7 @@ a {
   font-size: 14px;
   font-weight: 500;
 }
-.functioning .functioning__filter .functioning__filter__btn {
+.functioning__filter__btn {
   background-color: #F6F6F6;
   display: flex;
   justify-content: flex-start;
@@ -149,7 +149,7 @@ a {
   gap: 18px;
   margin-bottom: 70px;
 }
-.restaurants__wrappercard .restaurants__wrappercard__card {
+.restaurants__wrappercard__card {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -158,28 +158,28 @@ a {
   border-radius: 15px;
   position: relative;
 }
-.restaurants__wrappercard .restaurants__wrappercard__card .restaurants__wrappercard__card__img {
+.restaurants__wrappercard__card__img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
-.restaurants__wrappercard .restaurants__wrappercard__card .restaurants__wrappercard__card__content {
+.restaurants__wrappercard__card__content {
   display: flex;
   align-items: center;
   border-radius: 15px;
   margin-left: 13px;
 }
-.restaurants__wrappercard .restaurants__wrappercard__card .restaurants__wrappercard__card__content .restaurants__wrappercard__card__content__txt__title {
+.restaurants__wrappercard__card__content__txt__title {
   font-weight: 700;
   margin: 12px 0px 0px 12px;
 }
-.restaurants__wrappercard .restaurants__wrappercard__card .restaurants__wrappercard__card__content .restaurants__wrappercard__card__content__txt__locality {
+.restaurants__wrappercard__card__content__txt__locality {
   font-size: 17px;
   font-weight: 300;
   margin: 5px 0px 12px 12px;
 }
-.restaurants__wrappercard .restaurants__wrappercard__card .restaurants__wrappercard__card__content .restaurants__wrappercard__card__content__heart {
+.restaurants__wrappercard__card__content__heart {
   position: absolute;
   left: 85%;
 }
@@ -199,7 +199,7 @@ a {
   top: 15px;
   right: 15px;
 }
-.thumbnail-news .thumbnail-news__txt {
+.thumbnail-news__txt {
   padding: 7px 9px 6px 9px;
   margin: 0 auto;
 }
@@ -212,24 +212,24 @@ a {
   padding: 22px 25px;
   gap: 16px;
 }
-.footer .footer__logo {
+.footer__logo {
   display: block;
   font-family: var(--text__logo-and-title);
   margin: 0px;
   font-size: 18px;
   font-weight: 400;
 }
-.footer .footer__wrapperlink {
+.footer__wrapperlink {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-.footer .footer__link {
+.footer__link {
   color: #FFF;
   font-weight: 500;
 }
-.footer .footer__link .footer__link__partainer, .footer .footer__link .footer__link__topropose {
+.footer__link__partainer, .footer__link__topropose {
   display: flex;
   gap: 11px;
 }/*# sourceMappingURL=stylehome.css.map */
