@@ -72,20 +72,7 @@ a {
   justify-content: center;
   position: relative;
 }
-.hero__btn__bg {
-  position: absolute;
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: white;
-  opacity: 0;
-  transition: opacity 250ms;
-}
-.hero__btn__bg:hover {
-  opacity: 0.1;
-}
-
-#btn__explore {
+.hero__btn__explore {
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -97,10 +84,26 @@ a {
   color: #FFF;
   border: none;
   margin-bottom: 50px;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, background-color 0.3s;
 }
-#btn__explore:hover {
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+.hero__btn__explore:hover {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5);
+  background: var(--button-gradient, linear-gradient(175deg, #ff93e1 0%, #a16be0 100%));
+}
+.hero__btn__explore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.hero__btn__explore:hover::before {
+  opacity: 0.2;
 }
 
 .functioning {
