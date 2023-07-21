@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* variables */
+:root {
+  /* palette de couleur */
+  --background: #F6F6F6;
+  --primary: #9356DC;
+  --secondaire: #FF79DA;
+  --tertiaire: #99E2D0;
+  --green-font: #008766;
+  --blue: #89C8FA;
+  --blue-2: #003A68;
+  --grey: #353535;
+  --grey-2: #EAEAEA;
+  --white: #FFF;
+  /* fonte-familly */
+  --text: "Roboto";
+  --text__logo-and-title: "shrikhand";
+}
+
+/* général */
+* body {
+  margin: 0 auto;
+  font-family: var(--text);
+  background-color: var(--background);
+}
+
+* .title {
+  font-family: var(--text__logo-and-title);
+}
+
+.title__h2 {
+  margin-left: 20px;
+  padding-top: 48px;
+  padding-bottom: 15px;
+  font: 700 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #101010;
+}
+
+/* header */
+.logoheader {
+  text-align: center;
+  background-color: var(--white);
+}
+
+.logo {
+  padding: 14px 19px 13px 16px;
+}
+
+.location {
+  background-color: var(--grey-2);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.location__search {
+  border: none;
+  background-color: transparent;
+  font: 500 16px var(--text);
+  color: var(--grey);
+  width: 109px;
+}/*# sourceMappingURL=stylehome.css.map */

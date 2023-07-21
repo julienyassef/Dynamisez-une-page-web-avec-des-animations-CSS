@@ -1,7 +1,7 @@
 /* variables */
 :root {
 
-    /* palette de coueleur */
+    /* palette de couleur */
     --background: #F6F6F6;
     --primary: #9356DC;
     --secondaire: #FF79DA;
@@ -44,31 +44,32 @@ a {
 
     /* header */
 
-.logo__container {
-    text-align: center;
-    background-color: var(--white);
-}
+    .logoheader {
+        text-align: center;
+        background-color: var(--white);
+    }
+    
+    .logo {
+        padding: 14px 19px 13px 16px;
+    }
+    
+    .location {
+        background-color:var(--grey-2);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px; 
+    }
+    
+    .location__search {
+        border: none;
+        background-color: transparent;
+        font: 500 16px var(--text);
+        color: var(--grey);
+        width: 109px ;
+    }
 
-.logo {
-    padding: 14px 19px 13px 16px;
-}
-
-.location {
-    background-color:var(--grey-2);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px; 
-}
-
-.location__search {
-    border: none;
-    background-color: transparent;
-    font: 500 16px var(--text);
-    color: var(--grey);
-    width: 109px ;
-}
 
     /* Section Hero */
 
