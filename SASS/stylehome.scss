@@ -1,0 +1,284 @@
+
+// variables 
+
+$background: #F6F6F6;
+$primary: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$green-font: #008766;
+$blue: #89C8FA;
+$blue-2: #003A68; 
+$grey: #353535;
+$grey-2: #EAEAEA;
+$white: #FFF;
+
+:root {
+
+    // fonte-familly 
+    --text: "Roboto";
+    --text__logo-and-title: "shrikhand";
+}
+
+    //  général 
+
+* body {
+    margin: 0 auto;
+    font-family: var(--text);
+    background-color: $background;
+}
+
+* .title {
+    font-family: var(--text__logo-and-title);
+}
+
+.title__h2 {
+    margin-left: 20px;
+    padding-top: 48px;
+    padding-bottom: 15px;
+    font: 700 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #101010;
+}
+
+    // header
+
+.logoheader {
+    text-align: center;
+    background-color: $white;
+    &__logo {
+        padding: 14px 19px 13px 16px;
+    }
+}
+
+.location {
+    background-color: $grey-2;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px; 
+    &__search {
+        border: none;
+        background-color: transparent;
+        font: 500 16px var(--text);
+        color: $grey;
+        width: 109px ;
+    }
+}
+    
+    // Section Hero 
+
+.hero {
+    text-align: center; 
+    &__book {
+        font: 24px;
+        width: 275px;
+        height: 68px; 
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__discover {
+        font: 300 18px;
+        color: $grey;
+        width: 315px;
+        height: 46px; 
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &__explore {
+            width: 218px;
+            height: 50px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            background: var(--button-gradient, linear-gradient(175deg, $secondaire 0%, $primary 100%));
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "roboto";
+            color: $white;
+            border: none;
+            margin-bottom: 50px; 
+            transition: box-shadow 0.3s, background-color 0.3s;
+            &:hover {
+                box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25); 
+                background: var(--button-gradient, linear-gradient(175deg, lighten($secondaire, 5) 0%, lighten($primary, 5) 100%));
+            }     
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: lighten($white, 5);
+                opacity: 0;
+                transition: opacity 250ms; 
+            }
+            &:hover::before {
+                opacity: 0.2;
+            }
+        } 
+    }
+}
+
+    // section functioning
+
+.functioning {
+    background-color: $white;
+    &__filter {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 75px;
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            margin-right: 15px;
+        }
+        &__circle {
+            position: relative;
+            transform: translateX(50%); 
+            &__number {
+                position: absolute;
+                top: 45%; 
+                left: 35%;
+                transform: translateY(-50%);
+                margin: 0;
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+            } 
+        }
+        &__btn {
+            background-color: $background;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 40px;
+            gap: 20px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 322px;
+            height: 72px;  
+        }
+    }
+}
+
+#btn__filter {
+    background-color:transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "roboto";
+}
+
+    //  section restaurants 
+.restaurants__wrappercard {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-right: 18px; 
+    gap: 18px;
+    margin-bottom: 70px;
+    &__container {
+        position: relative;
+        &__card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            border-radius: 15px;
+            position: relative;
+            &__img {
+                width: 100%; 
+                object-fit: cover;
+                border-radius: 15px 15px 0px 0px;
+            }
+            &__content {
+                display: flex;
+                align-items: center;
+                border-radius: 15px;
+                margin-left: 13px;
+                &__txt__title {
+                    font-weight: 700;
+                    margin: 12px 0px 0px 12px;
+                }
+                &__txt__locality {
+                    font-size: 17px;
+                    font-weight: 300;
+                    margin: 5px 0px 12px 12px;
+                }
+            }
+        }
+        &__heart {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+        }
+    }
+}
+
+.thumbnail-news {
+    background-color: $tertiaire;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    color: $green-font;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 1;
+    position: absolute ;
+    top: 15px;
+    right: 15px;
+    &__txt {
+        padding: 7px 9px 6px 9px;
+        margin: 0 auto;
+    }
+}
+
+    // footer 
+
+.footer {
+    background-color: $grey;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 25px;
+    gap: 16px;
+    &__logo {
+        display: block;
+        font-family: var(--text__logo-and-title);
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__wrapperlink {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    &__link {
+        color: $white;
+        font-weight: 500;
+        &__partainer, &__topropose {
+            display: flex;
+            gap: 11px;
+        }
+    }
+}
+
