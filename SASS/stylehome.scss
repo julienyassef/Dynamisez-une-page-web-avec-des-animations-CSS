@@ -106,7 +106,7 @@ a {
             margin-bottom: 50px; 
             transition: box-shadow 0.3s, background-color 0.3s;
             &:hover {
-                box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5); 
+                box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25); 
                 background: var(--button-gradient, linear-gradient(175deg, lighten($secondaire, 5) 0%, lighten($primary, 5) 100%));
             }     
             &::before {
@@ -127,8 +127,6 @@ a {
         } 
     }
 }
-
-
 
     // section functioning
 
