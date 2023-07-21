@@ -209,7 +209,7 @@ a {
 }
 
 /* footer */
-footer {
+.footer {
   background-color: #353535;
   color: #FFF;
   display: flex;
@@ -217,28 +217,24 @@ footer {
   padding: 22px 25px;
   gap: 16px;
 }
-
-.footer__logo {
+.footer .footer__logo {
   display: block;
   font-family: var(--text__logo-and-title);
   margin: 0px;
   font-size: 18px;
   font-weight: 400;
 }
-
-.footer__link {
+.footer .footer__wrapperlink {
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-
-.footer__link a {
+.footer .footer__link {
   color: #FFF;
   font-weight: 500;
 }
-
-.footer__link__partainer, .footer__link__to-propose {
+.footer .footer__link .footer__link__partainer, .footer .footer__link .footer__link__topropose {
   display: flex;
   gap: 11px;
 }/*# sourceMappingURL=stylehome.css.map */
