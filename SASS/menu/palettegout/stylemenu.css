@@ -48,4 +48,25 @@ a {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  border-radius: 40px 40px 0px 0px;
+}
+.menu__container-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__container-title__title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.menu__container-title__heart {
+  margin-right: 50px;
 }/*# sourceMappingURL=stylemenu.css.map */
