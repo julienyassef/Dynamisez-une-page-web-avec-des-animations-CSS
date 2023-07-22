@@ -1,0 +1,221 @@
+
+// variables 
+
+$background: #F6F6F6;
+$primary: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$green-font: #008766;
+$blue: #89C8FA;
+$blue-2: #003A68; 
+$grey: #353535;
+$grey-2: #EAEAEA;
+$white: #FFF;
+
+:root {
+
+    // fonte-familly 
+    --text: "Roboto";
+    --text__logo-and-title: "shrikhand";
+}
+
+    //  général 
+
+* body {
+    margin: 0 auto;
+    font-family: var(--text);
+    background-color: $background;
+}
+
+* .title {
+    font-family: var(--text__logo-and-title);
+}
+
+.title__h2 {
+    margin-left: 20px;
+    padding-top: 48px;
+    padding-bottom: 15px;
+    font: 700 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #101010;
+}
+
+    // header
+
+.logoheader {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    background-color: $white;
+    gap: 42px;
+    &__back-arrow {
+        margin-top: 14px;
+        margin-bottom: 13px;
+    }
+    &__logo {
+        padding: 0px 19px 0px 16px;
+        margin-top: 14px;
+        margin-bottom: 13px;
+        // pour toujours avoir le logo centré dans la page
+        margin-right: 72px;
+    }
+}
+
+.main {
+    position: relative;
+}
+
+.photo {
+    &__restaurant {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: $background;
+    // position: absolute;
+    width: 100%;
+    top: 300px;
+    &__container-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            margin-top: 32px;
+            font-size: 28px;
+            font-weight: 400;
+            margin-left: 20px;
+        }
+        &__heart {
+            margin-right: 41px;
+        }
+    }
+    &__paragraph {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 13px 0px 13px;
+        gap: 12px;
+        &__wrappertitle {
+            &__title {
+                font-size: 16px;
+                font-weight: 300;
+                margin: 0px 0px 5px 0px;
+                text-transform: uppercase;
+            }
+            &__border {
+                background-color: $tertiaire;
+                width: 40px;
+                height: 3px;
+            }
+        }
+        &__card {
+            border-radius: 15px;
+            background-color: $white;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+            height: 69px;
+            padding: 8px 15px 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            &__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+    
+                &__flat {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                &__description {
+                    font-size: 17px;
+                    font-weight: 300;
+                }   
+            }
+        &__price {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 40px; 
+        }
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &__oder {
+            width: 186px;
+            height: 50px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            background: var(--button-gradient, linear-gradient(175deg, $secondaire 0%, $primary 100%));
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "roboto";
+            color: $white;
+            border: none;
+            margin-bottom: 50px; 
+            transition: box-shadow 0.3s, background-color 0.3s;
+            &:hover {
+                box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25); 
+                background: var(--button-gradient, linear-gradient(175deg, lighten($secondaire, 5) 0%, lighten($primary, 5) 100%));
+            }     
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: lighten($white, 5);
+                opacity: 0;
+                transition: opacity 250ms; 
+            }
+            &:hover::before {
+                opacity: 0.2;
+            }
+        } 
+    }
+}
+
+    // footer 
+
+    .footer {
+        background-color: $grey;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 25px;
+        gap: 16px;
+        &__logo {
+            display: block;
+            font-family: var(--text__logo-and-title);
+            margin: 0px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &__wrapperlink {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+        &__link {
+            color: $white;
+            font-weight: 500;
+            &__partainer, &__topropose {
+                display: flex;
+                gap: 11px;
+            }
+        }
+    }

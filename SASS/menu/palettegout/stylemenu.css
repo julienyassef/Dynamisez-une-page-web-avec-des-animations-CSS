@@ -1,0 +1,193 @@
+:root {
+  --text: "Roboto";
+  --text__logo-and-title: "shrikhand";
+}
+
+* body {
+  margin: 0 auto;
+  font-family: var(--text);
+  background-color: #F6F6F6;
+}
+
+* .title {
+  font-family: var(--text__logo-and-title);
+}
+
+.title__h2 {
+  margin-left: 20px;
+  padding-top: 48px;
+  padding-bottom: 15px;
+  font: 700 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #101010;
+}
+
+.logoheader {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  background-color: #FFF;
+  gap: 42px;
+}
+.logoheader__back-arrow {
+  margin-top: 14px;
+  margin-bottom: 13px;
+}
+.logoheader__logo {
+  padding: 0px 19px 0px 16px;
+  margin-top: 14px;
+  margin-bottom: 13px;
+  margin-right: 72px;
+}
+
+.main {
+  position: relative;
+}
+
+.photo__restaurant {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #F6F6F6;
+  width: 100%;
+  top: 300px;
+}
+.menu__container-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__container-title__title {
+  margin-top: 32px;
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.menu__container-title__heart {
+  margin-right: 41px;
+}
+.menu__paragraph {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 13px 0px 13px;
+  gap: 12px;
+}
+.menu__paragraph__wrappertitle__title {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px 5px 0px;
+  text-transform: uppercase;
+}
+.menu__paragraph__wrappertitle__border {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+}
+.menu__paragraph__card {
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  height: 69px;
+  padding: 8px 15px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__paragraph__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.menu__paragraph__card__content__flat {
+  font-size: 20px;
+  font-weight: 500;
+}
+.menu__paragraph__card__content__description {
+  font-size: 17px;
+  font-weight: 300;
+}
+.menu__paragraph__card__price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.menu__btn {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.menu__btn__oder {
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: var(--button-gradient, linear-gradient(175deg, #FF79DA 0%, #9356DC 100%));
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "roboto";
+  color: #FFF;
+  border: none;
+  margin-bottom: 50px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+.menu__btn__oder:hover {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25);
+  background: var(--button-gradient, linear-gradient(175deg, #ff93e1 0%, #a16be0 100%));
+}
+.menu__btn__oder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.menu__btn__oder:hover::before {
+  opacity: 0.2;
+}
+
+.footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  gap: 16px;
+}
+.footer__logo {
+  display: block;
+  font-family: var(--text__logo-and-title);
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer__wrapperlink {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__link {
+  color: #FFF;
+  font-weight: 500;
+}
+.footer__link__partainer, .footer__link__topropose {
+  display: flex;
+  gap: 11px;
+}/*# sourceMappingURL=stylemenu.css.map */
