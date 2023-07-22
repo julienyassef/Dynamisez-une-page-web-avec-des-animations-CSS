@@ -309,15 +309,12 @@ a {
          // section functioning Desktop version
 
          .functioning {
-            background-color: #008766;
-            &__title {
-                max-width: 1440px;
+             &__title { 
+                margin-left: 20px;
             }
             &__filter {
                 flex-direction: row ;
                 justify-content: center;
-                gap: 1px;
-                
                 &__wrapper {
                     width: 100%;
                     max-width: 322px;

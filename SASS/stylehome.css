@@ -272,16 +272,12 @@ a {
   .hero__btn {
     margin-bottom: -30px;
   }
-  .functioning {
-    background-color: #008766;
-  }
   .functioning__title {
-    max-width: 1440px;
+    margin-left: 20px;
   }
   .functioning__filter {
     flex-direction: row;
     justify-content: center;
-    gap: 1px;
   }
   .functioning__filter__wrapper {
     width: 100%;
