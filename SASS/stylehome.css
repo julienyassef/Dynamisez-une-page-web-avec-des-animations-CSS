@@ -256,8 +256,22 @@ a {
   gap: 11px;
 }
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  * body {
-    background-color: #9356DC;
+@media all and (min-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero__book {
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hero__discover {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .hero__btn {
+    margin-bottom: -30px;
   }
 }/*# sourceMappingURL=stylehome.css.map */
