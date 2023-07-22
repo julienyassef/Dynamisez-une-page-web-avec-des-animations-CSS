@@ -43,6 +43,10 @@ a {
   margin-right: 72px;
 }
 
+.main {
+  position: relative;
+}
+
 .photo__restaurant {
   width: 100%;
   height: 275px;
@@ -56,6 +60,10 @@ a {
   justify-content: center;
   gap: 40px;
   border-radius: 40px 40px 0px 0px;
+  background-color: #F6F6F6;
+  position: absolute;
+  width: 100%;
+  top: 300px;
 }
 .menu__container-title {
   display: flex;
@@ -63,10 +71,11 @@ a {
   align-items: center;
 }
 .menu__container-title__title {
+  margin-top: 32px;
   font-size: 28px;
   font-weight: 400;
   margin-left: 20px;
 }
 .menu__container-title__heart {
-  margin-right: 50px;
+  margin-right: 41px;
 }/*# sourceMappingURL=stylemenu.css.map */
