@@ -329,4 +329,10 @@ a {
   .footer__link__partainer svg, .footer__link__topropose svg {
     margin-top: 3px;
   }
+}
+@media screen and (min-width: 1440px) {
+  * body {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=stylehome.css.map */
