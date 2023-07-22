@@ -286,51 +286,76 @@ a {
 
     // Desktop version    
 
-    @media all and (min-width: 1024px) {
-        
-
-        .logoheader {
-            &__logo {
-                padding: 0;
-                margin-top: 30px;
-                margin-bottom: 25px;
-            }
+@media all and (min-width: 1024px) {
+    
+    // section header Desktop version
+    .logoheader {
+        &__logo {
+            padding: 0;
+            margin-top: 30px;
+            margin-bottom: 25px;
         }
+    }
 
         // section hero Desktop version
-        .hero {
-            text-align: center; 
-            &__book {
-                font-size: 40px;
-                width: 100%; 
-                margin-bottom: 10px;  
-            }
-            &__discover {
-                width: 100%;
-                font-size: 18px;
-                font-weight: 300;
-                margin-bottom: 10px;  
-            }
-            &__btn {
-                margin-bottom: -30px;  
-            }
+    .hero {
+        text-align: center; 
+        &__book {
+            font-size: 40px;
+            width: 100%; 
+            margin-bottom: 10px;  
         }
+        &__discover {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 10px;  
+        }
+        &__btn {
+            margin-bottom: -30px;  
+        }
+    }
        
          // section functioning Desktop version
 
-         .functioning {
-             &__title { 
-                margin-left: 20px;
+    .functioning {
+        &__title { 
+        margin-left: 20px;
+        }
+        &__filter {
+            flex-direction: row ;
+            justify-content: center;
+            &__wrapper {
+                width: 100%;
+                max-width: 322px;
+            }  
+        }
+    }
+
+         // section restaurants Desktop version
+    .restaurants {
+        &__title {
+            margin-left: 20px;
+        }
+        &__wrappercard {
+            flex-direction: row ;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 90px;
+            margin: 0 auto;
+            margin-bottom: 70px;
+            &__container {
+                width: 470px;
+                height: 251px;
+                margin-bottom: 30px;
+                &__divheart {
+                    &__heart {
+                    bottom: -40px;
+                    right: 30px;
+                    }
+                } 
             }
-            &__filter {
-                flex-direction: row ;
-                justify-content: center;
-                &__wrapper {
-                    width: 100%;
-                    max-width: 322px;
-                }  
-            }
-         }
-   
+        }
+    }
 }
     

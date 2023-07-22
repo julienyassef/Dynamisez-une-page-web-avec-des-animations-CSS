@@ -290,4 +290,24 @@ a {
     width: 100%;
     max-width: 322px;
   }
+  .restaurants__title {
+    margin-left: 20px;
+  }
+  .restaurants__wrappercard {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  .restaurants__wrappercard__container {
+    width: 470px;
+    height: 251px;
+    margin-bottom: 30px;
+  }
+  .restaurants__wrappercard__container__divheart__heart {
+    bottom: -40px;
+    right: 30px;
+  }
 }/*# sourceMappingURL=stylehome.css.map */
