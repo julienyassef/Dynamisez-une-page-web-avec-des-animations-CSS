@@ -342,9 +342,12 @@ a {
             flex-direction: row ;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 90px;
+            gap: 80px;
             margin: 0 auto;
             margin-bottom: 70px;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 251px;
             &__container {
                 width: 470px;
                 height: 251px;

@@ -297,7 +297,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 90px;
+    gap: 80px;
     margin: 0 auto;
     margin-bottom: 70px;
   }
