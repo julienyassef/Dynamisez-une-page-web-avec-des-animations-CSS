@@ -100,4 +100,21 @@ a {
             margin-right: 41px;
         }
     }
+    &__paragraph {
+        display: flex;
+        flex-direction: column;
+        &__wrappertitle {
+            &__title {
+                font-size: 16px;
+                font-weight: 300;
+                margin: 0px 0px 5px 13px;
+            }
+            &__border {
+                background-color: $tertiaire;
+                width: 40px;
+                height: 3px;
+                margin-left: 13px;
+            }
+        }
+    }
 }

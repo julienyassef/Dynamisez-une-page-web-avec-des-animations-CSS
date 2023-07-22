@@ -78,4 +78,19 @@ a {
 }
 .menu__container-title__heart {
   margin-right: 41px;
+}
+.menu__paragraph {
+  display: flex;
+  flex-direction: column;
+}
+.menu__paragraph__wrappertitle__title {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px 5px 13px;
+}
+.menu__paragraph__wrappertitle__border {
+  background-color: #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin-left: 13px;
 }/*# sourceMappingURL=stylemenu.css.map */
