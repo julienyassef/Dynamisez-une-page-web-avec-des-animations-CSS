@@ -49,7 +49,9 @@ a {
     text-align: center;
     background-color: $white;
     &__logo {
-        padding: 14px 19px 13px 16px;
+        padding: 0px 19px 0px 16px;
+        margin-top: 14px;
+        margin-bottom: 13px;
     }
 }
 
@@ -141,8 +143,6 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 10px;
-            margin-right: 15px;
         }
         &__circle {
             position: relative;
@@ -171,17 +171,17 @@ a {
             width: 100%;
             max-width: 322px;
             height: 72px;  
+            &__filter {
+                background-color:transparent;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "roboto";
+            }
         }
     }
 }
 
-#btn__filter {
-    background-color:transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "roboto";
-}
 
     //  section restaurants 
 .restaurants__wrappercard {
@@ -222,10 +222,12 @@ a {
                 }
             }
         }
-        &__heart {
+        &__divheart {
+            &__heart {
             position: absolute;
             bottom: 20px;
-            right: 30px;
+            right: 30px; 
+            }
         }
     }
 }
@@ -282,3 +284,116 @@ a {
     }
 }
 
+    // Desktop version    
+
+@media all and (min-width: 1024px) {
+    
+    // section header Desktop version
+    .logoheader {
+        &__logo {
+            padding: 0;
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+    }
+
+        // section hero Desktop version
+    .hero {
+        text-align: center; 
+        &__book {
+            font-size: 40px;
+            width: 100%; 
+            margin-bottom: 10px;  
+        }
+        &__discover {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 10px;  
+        }
+        &__btn {
+            margin-bottom: -30px;  
+        }
+    }
+       
+         // section functioning Desktop version
+
+    .functioning {
+        &__title { 
+        margin-left: 20px;
+        }
+        &__filter {
+            flex-direction: row ;
+            justify-content: center;
+            &__wrapper {
+                width: 100%;
+                max-width: 322px;
+            }  
+        }
+    }
+
+         // section restaurants Desktop version
+
+    .restaurants {
+        &__title {
+            margin-left: 20px;
+        }
+        &__wrappercard {
+            flex-direction: row ;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 80px;
+            margin: 0 auto;
+            margin-bottom: 70px;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 251px;
+            &__container {
+                width: 470px;
+                height: 251px;
+                margin-bottom: 30px;
+                &__divheart {
+                    &__heart {
+                    bottom: -40px;
+                    right: 30px;
+                    }
+                } 
+            }
+        }
+    }
+
+    // section footer desktop version
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse; 
+        height: 54px;
+        padding:  30px 70px 30px 25px ; 
+        gap: 100px;
+        &__logo {
+          margin-top: 30px;
+        }
+        &__wrapperlink {
+            display: flex;
+            flex-direction: row;
+            margin-top: 35px; 
+            gap: 25px ;  
+        }
+        &__link {
+            &__partainer svg, &__topropose svg {
+                // pour une mise en page bien aligné
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    * body {
+       width: 1440px;
+       margin: 0 auto;
+    }
+
+}
+    
