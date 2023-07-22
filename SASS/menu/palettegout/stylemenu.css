@@ -61,7 +61,6 @@ a {
   gap: 40px;
   border-radius: 40px 40px 0px 0px;
   background-color: #F6F6F6;
-  position: absolute;
   width: 100%;
   top: 300px;
 }
@@ -161,4 +160,34 @@ a {
 }
 .menu__btn__oder:hover::before {
   opacity: 0.2;
+}
+
+.footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  gap: 16px;
+}
+.footer__logo {
+  display: block;
+  font-family: var(--text__logo-and-title);
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer__wrapperlink {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__link {
+  color: #FFF;
+  font-weight: 500;
+}
+.footer__link__partainer, .footer__link__topropose {
+  display: flex;
+  gap: 11px;
 }/*# sourceMappingURL=stylemenu.css.map */
