@@ -200,10 +200,24 @@ a {
   font-weight: 300;
   margin: 5px 0px 12px 12px;
 }
-.restaurants__wrappercard__container__heart {
+.restaurants__wrappercard__container__divheart__heart {
   position: absolute;
   bottom: 20px;
   right: 30px;
+}
+.restaurants__wrappercard__container__divheart__heart--none {
+  position: absolute;
+  z-index: 0;
+  cursor: auto;
+}
+.restaurants__wrappercard__container__divheart__heart--purple {
+  position: absolute;
+  bottom: 20px;
+  z-index: 1;
+}
+.restaurants__wrappercard__container__divheart__heart--purple:active {
+  transform: translateY(20px);
+  transition: transform 900ms ease-in-out;
 }
 
 .thumbnail-news {

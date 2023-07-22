@@ -222,10 +222,13 @@ a {
                 }
             }
         }
-        &__heart {
+        &__divheart {
+            &__heart {
             position: absolute;
             bottom: 20px;
-            right: 30px;
+            right: 30px; 
+            }
+            }
         }
     }
 }
