@@ -103,18 +103,49 @@ a {
     &__paragraph {
         display: flex;
         flex-direction: column;
+        margin: 0px 13px 0px 13px;
+        gap: 12px;
         &__wrappertitle {
             &__title {
                 font-size: 16px;
                 font-weight: 300;
-                margin: 0px 0px 5px 13px;
+                margin: 0px 0px 5px 0px;
+                text-transform: uppercase;
             }
             &__border {
                 background-color: $tertiaire;
                 width: 40px;
                 height: 3px;
-                margin-left: 13px;
             }
+        }
+        &__card {
+            border-radius: 15px;
+            background-color: $white;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+            height: 69px;
+            padding: 8px 15px 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            &__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+    
+                &__flat {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                &__description {
+                    font-size: 17px;
+                    font-weight: 300;
+                }   
+            }
+        &__price {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 40px; 
+        }
         }
     }
 }
