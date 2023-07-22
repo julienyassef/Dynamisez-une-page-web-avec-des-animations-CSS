@@ -333,6 +333,7 @@ a {
     }
 
          // section restaurants Desktop version
+
     .restaurants {
         &__title {
             margin-left: 20px;
@@ -354,6 +355,31 @@ a {
                     right: 30px;
                     }
                 } 
+            }
+        }
+    }
+
+    // section footer desktop version
+
+    .footer {
+        display: flex;
+        flex-direction: row-reverse; 
+        height: 54px;
+        padding:  30px 70px 30px 25px ; 
+        gap: 100px;
+        &__logo {
+          margin-top: 30px;
+        }
+        &__wrapperlink {
+            display: flex;
+            flex-direction: row;
+            margin-top: 35px; 
+            gap: 25px ;  
+        }
+        &__link {
+            &__partainer svg, &__topropose svg {
+                // pour une mise en page bien aligné
+                margin-top: 3px;
             }
         }
     }

@@ -310,4 +310,23 @@ a {
     bottom: -40px;
     right: 30px;
   }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 54px;
+    padding: 30px 70px 30px 25px;
+    gap: 100px;
+  }
+  .footer__logo {
+    margin-top: 30px;
+  }
+  .footer__wrapperlink {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    gap: 25px;
+  }
+  .footer__link__partainer svg, .footer__link__topropose svg {
+    margin-top: 3px;
+  }
 }/*# sourceMappingURL=stylehome.css.map */
