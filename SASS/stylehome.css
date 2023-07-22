@@ -205,20 +205,6 @@ a {
   bottom: 20px;
   right: 30px;
 }
-.restaurants__wrappercard__container__divheart__heart--none {
-  position: absolute;
-  z-index: 0;
-  cursor: auto;
-}
-.restaurants__wrappercard__container__divheart__heart--purple {
-  position: absolute;
-  bottom: 20px;
-  z-index: 1;
-}
-.restaurants__wrappercard__container__divheart__heart--purple:active {
-  transform: translateY(20px);
-  transition: transform 900ms ease-in-out;
-}
 
 .thumbnail-news {
   background-color: #99E2D0;
@@ -268,4 +254,10 @@ a {
 .footer__link__partainer, .footer__link__topropose {
   display: flex;
   gap: 11px;
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  * body {
+    background-color: #9356DC;
+  }
 }/*# sourceMappingURL=stylehome.css.map */
