@@ -148,4 +148,42 @@ a {
         }
         }
     }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &__oder {
+            width: 218px;
+            height: 50px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            background: var(--button-gradient, linear-gradient(175deg, $secondaire 0%, $primary 100%));
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "roboto";
+            color: $white;
+            border: none;
+            margin-bottom: 50px; 
+            transition: box-shadow 0.3s, background-color 0.3s;
+            &:hover {
+                box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.25); 
+                background: var(--button-gradient, linear-gradient(175deg, lighten($secondaire, 5) 0%, lighten($primary, 5) 100%));
+            }     
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px;
+                background-color: lighten($white, 5);
+                opacity: 0;
+                transition: opacity 250ms; 
+            }
+            &:hover::before {
+                opacity: 0.2;
+            }
+        } 
+    }
 }
