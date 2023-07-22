@@ -171,17 +171,17 @@ a {
             width: 100%;
             max-width: 322px;
             height: 72px;  
+            &__filter {
+                background-color:transparent;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "roboto";
+            }
         }
     }
 }
 
-#btn__filter {
-    background-color:transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "roboto";
-}
 
     //  section restaurants 
 .restaurants__wrappercard {
