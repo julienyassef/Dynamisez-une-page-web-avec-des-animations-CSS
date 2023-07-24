@@ -139,6 +139,7 @@ a {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   max-width: 100%;
   padding: 10px;
+  cursor: zoom-in;
 }
 .menu__paragraph__card__toggle {
   display: none;
