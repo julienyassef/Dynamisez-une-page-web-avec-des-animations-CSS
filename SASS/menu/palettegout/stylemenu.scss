@@ -133,7 +133,7 @@ a {
                 justify-content: center;
                 gap: 5px;
                 max-width: 80%;
-                &__flat {
+                &__dish {
                     font-size: 20px;
                     font-weight: 500;
                     overflow: hidden;
@@ -149,7 +149,7 @@ a {
                     text-overflow: ellipsis;
                     padding: 0px 0px 10px 15px;
                 }   
-                &__flat:hover, &__description:hover {
+                &__dish:hover, &__description:hover {
                 white-space: normal;
                 overflow: visible;
                 z-index: 1;
@@ -168,9 +168,6 @@ a {
             &__wrapperprice {
                 display: flex;
                 align-items: center;
-                transform: translateX(50%);
-                transition: transform 3s ease-in-out;
-
                 &__price {
                     font-weight: 500;
                     margin-top: 40px;
@@ -222,10 +219,6 @@ a {
         } 
     }
 }
-
-.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
-    transform: translateX(10);
-  }
     // footer 
 
     .footer {

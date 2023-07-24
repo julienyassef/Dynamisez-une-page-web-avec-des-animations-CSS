@@ -112,7 +112,7 @@ a {
   gap: 5px;
   max-width: 80%;
 }
-.menu__paragraph__card__content__flat {
+.menu__paragraph__card__content__dish {
   font-size: 20px;
   font-weight: 500;
   overflow: hidden;
@@ -128,7 +128,7 @@ a {
   text-overflow: ellipsis;
   padding: 0px 0px 10px 15px;
 }
-.menu__paragraph__card__content__flat:hover, .menu__paragraph__card__content__description:hover {
+.menu__paragraph__card__content__dish:hover, .menu__paragraph__card__content__description:hover {
   white-space: normal;
   overflow: visible;
   z-index: 1;
@@ -146,8 +146,6 @@ a {
 .menu__paragraph__card__wrapperprice {
   display: flex;
   align-items: center;
-  transform: translateX(50%);
-  transition: transform 3s ease-in-out;
 }
 .menu__paragraph__card__wrapperprice__price {
   font-weight: 500;
@@ -195,10 +193,6 @@ a {
 }
 .menu__btn__oder:hover::before {
   opacity: 0.2;
-}
-
-.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
-  transform: translateX(10);
 }
 
 .footer {
