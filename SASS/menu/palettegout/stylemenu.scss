@@ -121,16 +121,17 @@ a {
         &__card {
             border-radius: 15px;
             background-color: $white;
-            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             height: 69px;
-            padding: 8px 15px 10px 15px;
             display: flex;
             justify-content: space-between;
+            width: 100%;
+            cursor: pointer;
             &__content {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                gap: 10px;
+                gap: 5px;
                 max-width: 80%;
                 &__flat {
                     font-size: 20px;
@@ -138,6 +139,7 @@ a {
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    padding: 10px 0px 0px 15px;
                 }
                 &__description {
                     font-size: 17px;
@@ -145,8 +147,9 @@ a {
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
+                    padding: 0px 0px 10px 15px;
                 }   
-                &__flat:hover:active, &__description:hover:active {
+                &__flat:hover, &__description:hover {
                 white-space: normal;
                 overflow: visible;
                 z-index: 1;
@@ -159,11 +162,25 @@ a {
                 padding: 10px; 
                 }
             }
-        &__price {
-            font-size: 18px;
-            font-weight: 700;
-            margin-top: 40px;
-        }
+            &__toggle {
+                display: none;
+            }
+            &__wrapperprice {
+                display: flex;
+                align-items: center;
+                transform-origin: 0% 50%;
+                transition: transform 0.3s ease-in-out;
+
+                &__price {
+                    font-weight: 500;
+                    margin-top: 40px;
+                    padding-right: 15px;
+                    padding-left: 10px;
+                }
+                &__bell {
+                 display: inline-block;
+                }
+            }
         }
     }
     &__btn {
