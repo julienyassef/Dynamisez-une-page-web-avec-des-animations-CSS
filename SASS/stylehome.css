@@ -25,6 +25,60 @@ a {
   color: #101010;
 }
 
+@keyframes fade-out {
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation-name: fade-out;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-timing-function: ease-in-out;
+}
+.loader__dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  animation: loader infinite 0.3s alternate;
+}
+.loader__dot-1 {
+  background-color: #9356DC;
+}
+.loader__dot-2 {
+  background-color: #FF79DA;
+  animation-delay: 0.05s;
+}
+.loader__dot-3 {
+  background-color: #99E2D0;
+  animation-delay: 0.1s;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  }
+}
 .logoheader {
   text-align: center;
   background-color: #FFF;

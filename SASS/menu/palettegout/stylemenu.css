@@ -97,6 +97,7 @@ a {
 }
 .menu__paragraph__card {
   border-radius: 15px;
+  overflow: hidden;
   background-color: #FFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   height: 69px;
@@ -128,38 +129,29 @@ a {
   text-overflow: ellipsis;
   padding: 0px 0px 10px 15px;
 }
-.menu__paragraph__card__content__dish:hover, .menu__paragraph__card__content__description:hover {
-  white-space: normal;
-  overflow: visible;
-  z-index: 1;
-  position: relative;
-  background-color: #FFF;
-  border: 1.5px solid #FF79DA;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-  padding: 10px;
-  cursor: zoom-in;
-}
 .menu__paragraph__card__toggle {
   display: none;
+}
+.menu__paragraph__card__price {
+  font-weight: 500;
+  margin-top: 40px;
+  padding-left: 10px;
 }
 .menu__paragraph__card__wrapperprice {
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease;
-}
-.menu__paragraph__card__wrapperprice__price {
-  font-weight: 500;
-  margin-top: 40px;
-  padding-right: 15px;
-  padding-left: 10px;
+  background-color: #99E2D0;
+  margin-right: -60px;
+  transition: 0.3s;
 }
 .menu__paragraph__card__wrapperprice__bell {
   display: inline-block;
 }
 .menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
-  transform: translateX(50%);
+  margin-right: 0;
+}
+.menu__paragraph__card:hover > .menu__paragraph__card__wrapperprice {
+  margin-right: 0;
 }
 .menu__btn {
   display: flex;
