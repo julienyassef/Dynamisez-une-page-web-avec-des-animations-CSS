@@ -98,30 +98,68 @@ a {
 .menu__paragraph__card {
   border-radius: 15px;
   background-color: #FFF;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   height: 69px;
-  padding: 8px 15px 10px 15px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
 }
 .menu__paragraph__card__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
+  max-width: 60%;
 }
-.menu__paragraph__card__content__flat {
+.menu__paragraph__card__content__dish {
   font-size: 20px;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 10px 0px 0px 15px;
 }
 .menu__paragraph__card__content__description {
   font-size: 17px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0px 0px 10px 15px;
 }
-.menu__paragraph__card__price {
-  font-size: 18px;
-  font-weight: 700;
+.menu__paragraph__card__content__dish:hover, .menu__paragraph__card__content__description:hover {
+  white-space: normal;
+  overflow: visible;
+  z-index: 1;
+  position: relative;
+  background-color: #FFF;
+  border: 1.5px solid #FF79DA;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  padding: 10px;
+  cursor: zoom-in;
+}
+.menu__paragraph__card__toggle {
+  display: none;
+}
+.menu__paragraph__card__wrapperprice {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.menu__paragraph__card__wrapperprice__price {
+  font-weight: 500;
   margin-top: 40px;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+.menu__paragraph__card__wrapperprice__bell {
+  display: inline-block;
+}
+.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
+  transform: translateX(50%);
 }
 .menu__btn {
   display: flex;
