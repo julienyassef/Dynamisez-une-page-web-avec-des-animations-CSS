@@ -110,7 +110,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  max-width: 80%;
+  max-width: 60%;
 }
 .menu__paragraph__card__content__dish {
   font-size: 20px;
