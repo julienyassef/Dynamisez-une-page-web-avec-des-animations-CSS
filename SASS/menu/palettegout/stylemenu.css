@@ -146,6 +146,7 @@ a {
 .menu__paragraph__card__wrapperprice {
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease;
 }
 .menu__paragraph__card__wrapperprice__price {
   font-weight: 500;
@@ -155,6 +156,9 @@ a {
 }
 .menu__paragraph__card__wrapperprice__bell {
   display: inline-block;
+}
+.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
+  transform: translateX(50%);
 }
 .menu__btn {
   display: flex;
