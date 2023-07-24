@@ -185,6 +185,7 @@ a {
 
 
     //  section restaurants 
+
 .restaurants__wrappercard {
     display: flex;
     flex-direction: column;
@@ -284,6 +285,71 @@ a {
         }
     }
 }
+
+// tablette version    
+
+@media all and (min-width: 767px) and (max-width: 1023px) {
+    
+    // section header tablette  version
+    .logoheader {
+        &__logo {
+            padding: 0;
+            margin-top: 30px;
+            margin-bottom: 25px;
+        }
+    }
+
+        // section hero tablette version
+    .hero {
+        text-align: center; 
+        &__book {
+            font-size: 34px;
+            width: 100%; 
+            margin-bottom: 10px;  
+        }
+        &__discover {
+            width: 100%;
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 10px;  
+        }
+        &__btn {
+            margin-bottom: -30px;  
+        }
+    }
+       
+         // section functioning tablette  version
+
+         .functioning {
+            &__title { 
+            margin-left: 40px;
+            }  
+        }
+
+         // section restaurants tablette  version
+
+    .restaurants {
+        &__title {
+            margin-left: 40px;
+        }
+        &__wrappercard {
+            margin-left: 80px;
+            margin-right: 80px; 
+            gap: 30px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    * body {
+       width: 1440px;
+       margin: 0 auto;
+    }
+
+}
+    
 
     // Desktop version    
 
