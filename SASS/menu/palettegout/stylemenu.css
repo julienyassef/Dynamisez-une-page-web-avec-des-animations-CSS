@@ -109,14 +109,33 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  max-width: 80%;
 }
 .menu__paragraph__card__content__flat {
   font-size: 20px;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__paragraph__card__content__description {
   font-size: 17px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu__paragraph__card__content__flat:hover:active, .menu__paragraph__card__content__description:hover:active {
+  white-space: normal;
+  overflow: visible;
+  z-index: 1;
+  position: relative;
+  background-color: #FFF;
+  border: 1.5px solid #FF79DA;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  padding: 10px;
 }
 .menu__paragraph__card__price {
   font-size: 18px;
