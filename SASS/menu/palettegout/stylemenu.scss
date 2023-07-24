@@ -168,8 +168,8 @@ a {
             &__wrapperprice {
                 display: flex;
                 align-items: center;
-                transform-origin: 0% 50%;
-                transition: transform 0.3s ease-in-out;
+                transform: translateX(50%);
+                transition: transform 3s ease-in-out;
 
                 &__price {
                     font-weight: 500;
@@ -223,6 +223,9 @@ a {
     }
 }
 
+.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
+    transform: translateX(10);
+  }
     // footer 
 
     .footer {

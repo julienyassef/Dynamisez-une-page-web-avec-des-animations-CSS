@@ -146,8 +146,8 @@ a {
 .menu__paragraph__card__wrapperprice {
   display: flex;
   align-items: center;
-  transform-origin: 0% 50%;
-  transition: transform 0.3s ease-in-out;
+  transform: translateX(50%);
+  transition: transform 3s ease-in-out;
 }
 .menu__paragraph__card__wrapperprice__price {
   font-weight: 500;
@@ -195,6 +195,10 @@ a {
 }
 .menu__btn__oder:hover::before {
   opacity: 0.2;
+}
+
+.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
+  transform: translateX(10);
 }
 
 .footer {
