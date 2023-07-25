@@ -43,69 +43,64 @@ a {
     color: #101010;
 }
 
+    // Section animation
+
     // Loader - animation
 
-    // @keyframes blur {
-    //     100% {
-    //     filter: blur(2.5px);
-    //     }
-    //   }
+// @keyframes fade-out {
+// 75% {
+//     opacity: 1
+// }
+// 100% {
+//     opacity: 0
+// }
+// }
 
-      @keyframes fade-out {
-        75% {
-            opacity: 1
-        }
-        100% {
-            opacity: 0
-        }
-      }
+// .animation {
+//     width: 100%;
+//     height: 100%;
+//     position: fixed;
+//     animation-name: fade-out;
+//     animation-duration: 2.5s;
+//     animation-fill-mode: forwards; 
+//     pointer-events: none;
+//     background-color: rgba(255,255,255,0.9);
+//     z-index: 10;
+// }
+// .loader {
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     animation-timing-function: ease-in-out;
+//     &__dot {
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//         margin: 0 10px;
+//         animation: loader infinite 0.3s alternate;
+//     }
+//     &__dot-1 {
+//         background-color: $primary;
+//     }
+//     &__dot-2 {
+//         background-color: $secondaire;
+//         animation-delay: 0.05s;
+//     }
+//     &__dot-3 {
+//         background-color: $tertiaire;
+//         animation-delay: 0.1s;
+//     }
+// }
 
-.animation {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    animation-name: fade-out;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards; 
-    pointer-events: none;
-    background-color: rgba(255,255,255,0.9);
-    z-index: 10;
-}
-.loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-timing-function: ease-in-out;
-    &__dot {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin: 0 10px;
-        animation: loader infinite 0.3s alternate;
-    }
-    &__dot-1 {
-        background-color: $primary;
-    }
-    &__dot-2 {
-        background-color: $secondaire;
-        animation-delay: 0.05s;
-    }
-    &__dot-3 {
-        background-color: $tertiaire;
-        animation-delay: 0.1s;
-    }
-}
-
-
-@keyframes loader {
-    100% {
-        transform: translateY(-30px);
-    }
-}
+// @keyframes loader {
+//     100% {
+//         transform: translateY(-30px);
+//     }
+// }
 
     // header
 
@@ -258,7 +253,7 @@ a {
     gap: 18px;
     margin-bottom: 70px;
     &__container {
-        position: relative;
+        
         &__card {
             width: 100%;
             display: flex;
@@ -266,7 +261,7 @@ a {
             background-color: $white;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             border-radius: 15px;
-            position: relative;
+            
             &__img {
                 width: 100%; 
                 object-fit: cover;
@@ -274,6 +269,7 @@ a {
             }
             &__content {
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
                 border-radius: 15px;
                 margin-left: 13px;
@@ -286,15 +282,39 @@ a {
                     font-weight: 300;
                     margin: 5px 0px 12px 12px;
                 }
+                &__divheart {
+                    display: flex;
+                    margin-right: 20px;
+                    background-color: #add668;
+                    &__heart {
+                        border-radius: 100px;
+                        border: 1px solid rgb(222, 12, 12);
+                        width: 20px;
+                        height: 20px;
+                        transform: translate(100%);
+                        // position: relative;
+                        // z-index: 2;
+                        
+                        &:active  ~ .restaurants__wrappercard__container__card__content__divheart__background-heart {
+                            transform: scale(1);
+                        }
+                    }
+                    &__background-heart {
+                        width: 23px;
+                        height: 22px;
+                        background: var(--button-gradient, linear-gradient(175deg, $primary 0%, $secondaire 100%));
+                        transform-origin: bottom center;
+                        transform: scale(0);
+                        transition: transform 300ms;
+                        // position: relative;
+                        // z-index: 1;
+                        // background-clip: padding-box; 
+
+                    } 
+                 }
             }
         }
-        &__divheart {
-            &__heart {
-            position: absolute;
-            bottom: 20px;
-            right: 30px; 
-            }
-        }
+       
     }
 }
 
