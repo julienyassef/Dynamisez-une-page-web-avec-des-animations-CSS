@@ -124,45 +124,36 @@ a {
             background-color: $white;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
             height: 69px;
-            display: flex;
-            justify-content: space-between;
             width: 100%;
+            display: flex;
+            justify-content: space-between;   
             cursor: pointer;
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
             &__content {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 gap: 5px;
                 max-width: 60%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
                 &__dish {
                     font-size: 20px;
                     font-weight: 500;
                     overflow: hidden;
                     white-space: nowrap;
-                    text-overflow: ellipsis;
                     padding: 10px 0px 0px 15px;
                 }
                 &__description {
                     font-size: 17px;
                     font-weight: 300;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
                     padding: 0px 0px 10px 15px;
                 }   
-                // &__dish:hover, &__description:hover {
-                // white-space: normal;
-                // overflow: visible;
-                // z-index: 1;
-                // position: relative;
-                // background-color: $white; 
-                // border: 1.5px solid $secondaire; 
-                // border-radius: 5px;
-                // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-                // max-width: 100%; 
-                // padding: 10px; 
-                // cursor: zoom-in;
-                // }
             }
             &__toggle {
                 display: none;
@@ -170,7 +161,7 @@ a {
             &__price {
                 font-weight: 500;
                 margin-top: 40px;
-                padding-left: 10px;
+                padding-right: 15px;
             }
             &__wrapperprice {
                 display: flex;
