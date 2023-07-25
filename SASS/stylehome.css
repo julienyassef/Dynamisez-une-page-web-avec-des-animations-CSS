@@ -375,28 +375,24 @@ a {
     flex-direction: row;
     justify-content: center;
   }
-  .functioning__filter__wrapper {
-    width: 100%;
-    max-width: 322px;
-  }
   .restaurants__title {
-    margin-left: 20px;
+    margin-left: 80px;
   }
   .restaurants__wrappercard {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
-    margin: 0 auto;
-    margin-bottom: 70px;
+    gap: 60px;
   }
   .restaurants__wrappercard__container {
-    width: 470px;
+    width: 100%;
+    max-width: 460px;
     height: 251px;
     margin-bottom: 30px;
   }
   .restaurants__wrappercard__container__divheart__heart {
-    bottom: -40px;
+    bottom: 35px;
     right: 30px;
   }
   .footer {
