@@ -203,10 +203,6 @@ a {
   background-color: #add668;
 }
 .restaurants__wrappercard__container__card__content__divheart__heart {
-  border-radius: 100px;
-  border: 1px solid rgb(222, 12, 12);
-  width: 20px;
-  height: 20px;
   transform: translate(100%);
 }
 .restaurants__wrappercard__container__card__content__divheart__heart:active ~ .restaurants__wrappercard__container__card__content__divheart__background-heart {
@@ -219,6 +215,7 @@ a {
   transform-origin: bottom center;
   transform: scale(0);
   transition: transform 300ms;
+  background-color: #101010;
 }
 
 .thumbnail-news {
