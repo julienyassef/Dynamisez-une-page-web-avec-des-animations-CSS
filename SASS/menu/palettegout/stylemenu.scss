@@ -138,20 +138,20 @@ a {
                 flex-direction: column;
                 justify-content: center;
                 gap: 5px;
-                max-width: 60%;
-                text-overflow: ellipsis;
-                overflow: hidden;
+                max-width: 80%;
                 white-space: nowrap;
                 &__dish {
                     font-size: 20px;
                     font-weight: 500;
                     overflow: hidden;
-                    white-space: nowrap;
                     padding: 10px 0px 0px 15px;
+                    text-overflow: ellipsis;
                 }
                 &__description {
                     font-size: 17px;
                     font-weight: 300;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     padding: 0px 0px 10px 15px;
                 }   
             }
