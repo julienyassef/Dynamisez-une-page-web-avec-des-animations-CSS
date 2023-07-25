@@ -330,10 +330,10 @@ a {
     align-items: center;
   }
   .menu__paragraph__wrappertitle {
-    min-width: 80%;
+    min-width: 70%;
   }
   .menu__paragraph__card {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 @media all and (min-width: 1024px) {
@@ -366,10 +366,10 @@ a {
     align-items: center;
   }
   .menu__paragraph__wrappertitle {
-    min-width: 80%;
+    min-width: 60%;
   }
   .menu__paragraph__card {
-    width: 80%;
+    width: 60%;
     max-width: 634%;
   }
   .footer {
