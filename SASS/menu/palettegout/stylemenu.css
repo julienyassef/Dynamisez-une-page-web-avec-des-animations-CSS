@@ -294,4 +294,12 @@ a {
 .footer__link__partainer, .footer__link__topropose {
   display: flex;
   gap: 11px;
+}
+
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .menu {
+    width: 80%;
+    position: relative;
+    top: 0px;
+  }
 }/*# sourceMappingURL=stylemenu.css.map */
