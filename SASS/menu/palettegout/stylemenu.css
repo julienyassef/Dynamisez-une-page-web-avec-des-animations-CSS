@@ -54,6 +54,75 @@ a {
      object-fit: cover;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu__paragraph-entree {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+.menu__paragraph-plats {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+.menu__paragraph-desserts {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 10s;
+}
+.menu__paragraph__card-1 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+.menu__paragraph__card-2 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 4s;
+}
+.menu__paragraph__card-3 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+.menu__paragraph__card-4 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 7s;
+}
+.menu__paragraph__card-5 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 8s;
+}
+.menu__paragraph__card-6 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 9s;
+}
+.menu__paragraph__card-7 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 12s;
+}
+.menu__paragraph__card-8 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 13s;
+}
+.menu__paragraph__card-9 {
+  opacity: 1;
+  animation-name: fade-in;
+  animation-duration: 14s;
+}
+
 .menu {
   display: flex;
   flex-direction: column;

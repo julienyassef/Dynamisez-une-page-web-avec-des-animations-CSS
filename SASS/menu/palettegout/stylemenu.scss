@@ -64,6 +64,8 @@ a {
     }
 }
 
+    //  Body
+
 .main {
     position: relative;
 }
@@ -75,6 +77,83 @@ a {
         object-fit: cover;
     }
 }
+        // animation ouverture de page
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+  }
+
+ .menu {
+    &__paragraph-entree {
+        opacity: 1;
+        animation-name: fade-in;
+        animation-duration: 1s; 
+    }
+    &__paragraph-plats {
+        opacity: 1;
+        animation-name: fade-in;
+        animation-duration: 5s; 
+    }
+    &__paragraph-desserts {
+        opacity: 1;
+        animation-name: fade-in;
+        animation-duration: 10s; 
+    }
+    &__paragraph {
+        &__card-1 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 3s;   
+        }
+        &__card-2 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 4s;   
+        }
+        &__card-3 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 5s;   
+        }
+        &__card-4 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 7s;   
+        }
+        &__card-5 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 8s;   
+        }
+        &__card-6 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 9s;   
+        }
+        &__card-7 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 12s;   
+        }
+        &__card-8 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 13s;   
+        }
+        &__card-9 {
+            opacity: 1;
+            animation-name: fade-in;
+            animation-duration: 14s;   
+        }    
+     } 
+ }
+
+        // body menu    
 
 .menu {
     display: flex;
@@ -83,7 +162,6 @@ a {
     gap: 40px;
     border-radius: 40px 40px 0px 0px;
     background-color: $background;
-    // position: absolute;
     width: 100%;
     top: 300px;
     &__container-title {
