@@ -337,6 +337,41 @@ a {
   }
 }
 @media all and (min-width: 1024px) {
+  .logoheader {
+    justify-content: flex-start;
+    position: relative;
+  }
+  .logoheader__back-arrow {
+    margin-left: 20px;
+  }
+  .logoheader__logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu__container-title {
+    gap: 20px;
+    justify-content: center;
+  }
+  .menu__container-title__heart {
+    margin: 12px 0px 0px 0px;
+  }
+  .menu__paragraph {
+    align-items: center;
+  }
+  .menu__paragraph__wrappertitle {
+    min-width: 80%;
+  }
+  .menu__paragraph__card {
+    width: 80%;
+    max-width: 634%;
+  }
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -361,5 +396,8 @@ a {
   * body {
     width: 1440px;
     margin: 0 auto;
+  }
+  .photo__restaurant {
+    max-width: 1440px;
   }
 }/*# sourceMappingURL=stylemenu.css.map */

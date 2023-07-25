@@ -381,16 +381,49 @@ a {
     }
 }
 
-
-
 // Desktop version    
 
 @media all and (min-width: 1024px) {
 
         // section header Desktop version
 
+    .logoheader {
+        justify-content: flex-start;
+        position: relative;
+        &__back-arrow {
+            margin-left: 20px; 
+        }
+        &__logo {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
         // section Menu Desktop version
 
+        .menu {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            &__container-title {
+                gap: 20px; 
+                justify-content: center;  
+                &__heart {
+                    margin: 12px 0px 0px 0px ;
+                }
+            }
+            &__paragraph {
+                align-items: center;
+                &__wrappertitle {
+                    min-width: 80%;  
+                }
+                &__card {
+                    width: 80%;
+                    max-width: 634%;
+                }
+            }  
+        }
 
 
         // section footer desktop version
@@ -423,6 +456,11 @@ a {
     * body {
        width: 1440px;
        margin: 0 auto;
+    }
+    .photo {
+        &__restaurant {
+            max-width: 1440px;  
+        }
     }
 
 }
