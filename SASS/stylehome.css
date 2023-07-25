@@ -345,12 +345,6 @@ a {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1440px) {
-  * body {
-    width: 1440px;
-    margin: 0 auto;
-  }
-}
 @media all and (min-width: 1024px) {
   .logoheader__logo {
     padding: 0;

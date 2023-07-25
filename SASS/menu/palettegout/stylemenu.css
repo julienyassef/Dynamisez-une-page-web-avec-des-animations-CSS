@@ -301,6 +301,19 @@ a {
 }
 
 @media all and (min-width: 767px) and (max-width: 1023px) {
+  .logoheader {
+    justify-content: flex-start;
+    position: relative;
+  }
+  .logoheader__back-arrow {
+    margin-left: 20px;
+  }
+  .logoheader__logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .menu {
     width: 80%;
     margin-left: 10%;
@@ -321,5 +334,32 @@ a {
   }
   .menu__paragraph__card {
     max-width: 80%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 54px;
+    padding: 30px 70px 30px 25px;
+    gap: 100px;
+  }
+  .footer__logo {
+    margin-top: 30px;
+  }
+  .footer__wrapperlink {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    gap: 25px;
+  }
+  .footer__link__partainer svg, .footer__link__topropose svg {
+    margin-top: 3px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  * body {
+    width: 1440px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=stylemenu.css.map */

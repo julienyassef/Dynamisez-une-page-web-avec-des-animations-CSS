@@ -340,6 +340,24 @@ a {
 @media all and (min-width: 767px) and (max-width: 1023px) {
 
 
+     // Header Tablette version
+
+     .logoheader {
+        justify-content: flex-start;
+        position: relative;
+        &__back-arrow {
+            margin-left: 20px; 
+        }
+        &__logo {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    //  Menu tablette version
+
     .menu {
         width: 80%;
         margin-left: 10%;
@@ -361,4 +379,50 @@ a {
             }
         }  
     }
+}
+
+
+
+// Desktop version    
+
+@media all and (min-width: 1024px) {
+
+        // section header Desktop version
+
+        // section Menu Desktop version
+
+
+
+        // section footer desktop version
+    .footer {
+        display: flex;
+        flex-direction: row-reverse; 
+        height: 54px;
+        padding:  30px 70px 30px 25px ; 
+        gap: 100px;
+        &__logo {
+          margin-top: 30px;
+        }
+        &__wrapperlink {
+            display: flex;
+            flex-direction: row;
+            margin-top: 35px; 
+            gap: 25px ;  
+        }
+        &__link {
+            &__partainer svg, &__topropose svg {
+                // pour une mise en page bien aligné
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    * body {
+       width: 1440px;
+       margin: 0 auto;
+    }
+
 }
