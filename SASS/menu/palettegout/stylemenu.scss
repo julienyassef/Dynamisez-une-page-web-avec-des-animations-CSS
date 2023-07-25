@@ -24,7 +24,7 @@ $white: #FFF;
 * body {
     margin: 0 auto;
     font-family: var(--text);
-    background-color: $background;
+    background-color: $white;
 }
 
 * .title {
@@ -334,14 +334,31 @@ a {
             }
         }
     }
-
     
         //  tablette version
 
 @media all and (min-width: 767px) and (max-width: 1023px) {
 
+
     .menu {
-     
-         
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        &__container-title {
+            gap: 20px; 
+            justify-content: center;  
+            &__heart {
+                margin: 12px 0px 0px 0px ;
+            }
+        }
+        &__paragraph {
+            align-items: center;
+            &__wrappertitle {
+                min-width: 80%;  
+            }
+            &__card {
+                max-width: 80%;
+            }
+        }  
     }
 }

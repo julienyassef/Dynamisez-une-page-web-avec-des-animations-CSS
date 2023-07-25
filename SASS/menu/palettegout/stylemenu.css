@@ -6,7 +6,7 @@
 * body {
   margin: 0 auto;
   font-family: var(--text);
-  background-color: #F6F6F6;
+  background-color: #FFF;
 }
 
 * .title {
@@ -298,4 +298,28 @@ a {
 .footer__link__partainer, .footer__link__topropose {
   display: flex;
   gap: 11px;
+}
+
+@media all and (min-width: 767px) and (max-width: 1023px) {
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .menu__container-title {
+    gap: 20px;
+    justify-content: center;
+  }
+  .menu__container-title__heart {
+    margin: 12px 0px 0px 0px;
+  }
+  .menu__paragraph {
+    align-items: center;
+  }
+  .menu__paragraph__wrappertitle {
+    min-width: 80%;
+  }
+  .menu__paragraph__card {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=stylemenu.css.map */
