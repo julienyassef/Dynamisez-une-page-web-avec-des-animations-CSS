@@ -253,7 +253,6 @@ a {
     gap: 18px;
     margin-bottom: 70px;
     &__container {
-        
         &__card {
             width: 100%;
             display: flex;
@@ -285,29 +284,43 @@ a {
                 &__divheart {
                     display: flex;
                     margin-right: 20px;
-                    background-color: #add668;
                     &__heart {
-                        transform: translate(100%);
-                        // position: relative;
+                        // transform: translate(100%);
+                        // margin-top: 10px;
                         // z-index: 2;
+                        // &:active  ~ .restaurants__wrappercard__container__card__content__divheart__background-heart {
+                        //     transform: scale(1);
+                            
+                        // }
                         
-                        &:active  ~ .restaurants__wrappercard__container__card__content__divheart__background-heart {
-                            transform: scale(1);
+                    }
+                    &__heart-full {
+                        // transform: translate(100%);
+                        // margin-top: 10px;
+                        // // z-index: 2; 
+                        position: absolute;
+                        opacity: 0;
+                        // transition-duration: 0.5s;
+                        &:hover {
+                            opacity: 1;
+                            color: $primary;
                         }
                     }
-                    &__background-heart {
-                        width: 23px;
-                        height: 22px;
-                        background: var(--button-gradient, linear-gradient(175deg, $primary 0%, $secondaire 100%));
-                        transform-origin: bottom center;
-                        transform: scale(0);
-                        transition: transform 300ms;
-                        background-color: #101010;
-                        // position: relative;
-                        // z-index: 1;
-                        // background-clip: padding-box; 
 
-                    } 
+                    // &__background-heart {
+                    //     width: 23px;
+                    //     height: 23px;
+                    //     background: var(--button-gradient, linear-gradient(175deg, $primary 0%, $secondaire 100%));
+                    //     transform-origin: bottom center;
+                    //     transform: scale(0);
+                    //     transition: transform 300ms;
+                    //     background-color: #101010;
+                    //     z-index: 3;
+                    //     background-origin: text;
+                    //     // -webkit-background-clip: text;
+                        
+
+                    // } 
                  }
             }
         }
