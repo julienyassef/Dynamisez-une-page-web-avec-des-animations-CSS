@@ -1,1 +1,33 @@
 /*# sourceMappingURL=styletest.css.map */
+
+.restaurants__wrappercard__container__card__content__divheart {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.restaurants__wrappercard__container__card__content__divheart__heart {
+    transform: translate(100%);
+    margin-top: 10px;
+    z-index: 2;
+
+}
+.restaurants__wrappercard__container__card__content__divheart__heart:active  ~ .restaurants__wrappercard__container__card__content__divheart__background-heart {
+    transform: scale(1);
+                            
+ }   
+
+.restaurants__wrappercard__container__card__content__divheart__heart-full {
+    transform: translate(100%);
+    margin-top: 10px;
+    z-index: 2; 
+    position: absolute;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.restaurants__wrappercard__container__card__content__divheart__heart-full:hover {
+    opacity: 1;
+    color: red;
+    background-color: red;
+}
