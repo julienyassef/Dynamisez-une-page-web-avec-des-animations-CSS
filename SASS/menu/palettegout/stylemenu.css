@@ -225,9 +225,6 @@ a {
   text-overflow: ellipsis;
   padding: 0px 0px 10px 15px;
 }
-.menu__paragraph__card__toggle {
-  display: none;
-}
 .menu__paragraph__card__price {
   font-weight: 500;
   margin-top: 40px;
