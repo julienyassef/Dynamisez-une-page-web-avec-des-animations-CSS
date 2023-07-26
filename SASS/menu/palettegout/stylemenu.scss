@@ -180,8 +180,26 @@ a {
             margin-left: 20px;
         }
         &__heart {
-            margin-right: 41px;
-        }
+            position: relative;
+            display: flex;
+            position: relative;
+            margin-right: 20px;
+            &__heart-full {
+                position: absolute;
+                opacity: 1;
+                transition-duration: 1s;
+                transition-property: all;
+                background-color: red;
+                &:hover {
+                    opacity: 1;
+                    color: transparent;
+                    height: 23px;
+                    background-image: linear-gradient(100deg, $primary, $secondaire);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+            }       
+        }   
     }
     &__paragraph {
         display: flex;
@@ -239,7 +257,7 @@ a {
                 }   
             }
             &__toggle {
-                display: none;
+                // display: none;
             }
             &__price {
                 font-weight: 500;
