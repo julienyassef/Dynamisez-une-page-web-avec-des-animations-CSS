@@ -291,8 +291,7 @@ a {
                         // &:active  ~ .restaurants__wrappercard__container__card__content__divheart__background-heart {
                         //     transform: scale(1);
                             
-                        // }
-                        
+                        // }   
                     }
                     &__heart-full {
                         // transform: translate(100%);
@@ -300,10 +299,12 @@ a {
                         // // z-index: 2; 
                         position: absolute;
                         opacity: 0;
-                        // transition-duration: 0.5s;
+                        transition-duration: 0.5s;
+                        transition-property: all;
                         &:hover {
                             opacity: 1;
                             color: $primary;
+                            background-image: linear(red, blue) ;
                         }
                     }
 
@@ -326,6 +327,10 @@ a {
         }
        
     }
+}
+
+.heart-checkbox {
+    display: none;
 }
 
 .thumbnail-news {

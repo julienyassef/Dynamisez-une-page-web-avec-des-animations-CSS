@@ -204,10 +204,17 @@ a {
 .restaurants__wrappercard__container__card__content__divheart__heart-full {
   position: absolute;
   opacity: 0;
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 .restaurants__wrappercard__container__card__content__divheart__heart-full:hover {
   opacity: 1;
   color: #9356DC;
+  background-image: linear(red, blue);
+}
+
+.heart-checkbox {
+  display: none;
 }
 
 .thumbnail-news {
