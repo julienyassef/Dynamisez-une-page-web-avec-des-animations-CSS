@@ -180,13 +180,16 @@ a {
             margin-left: 20px;
         }
         &__heart {
+            position: relative;
             display: flex;
             position: relative;
+            margin-right: 20px;
             &__heart-full {
                 position: absolute;
-                opacity: 0;
+                opacity: 1;
                 transition-duration: 1s;
                 transition-property: all;
+                background-color: red;
                 &:hover {
                     opacity: 1;
                     color: transparent;
@@ -195,7 +198,7 @@ a {
                     background-clip: text;
                     -webkit-background-clip: text;
                 }
-        }
+            }       
         } 
         
     }
