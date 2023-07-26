@@ -292,8 +292,8 @@ a {
                         &:hover {
                             opacity: 1;
                             color: transparent;
-                            height: 100%;
-                            background-image: linear-gradient($primary, $secondaire);
+                            height: 23px;
+                            background-image: linear-gradient(100deg, $primary, $secondaire);
                             background-clip: text;
                             -webkit-background-clip: text;
                         }
@@ -301,7 +301,6 @@ a {
                  }
             }
         }
-       
     }
 }
 
