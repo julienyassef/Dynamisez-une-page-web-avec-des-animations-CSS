@@ -150,7 +150,22 @@ a {
   margin-left: 20px;
 }
 .menu__container-title__heart {
-  margin-right: 41px;
+  display: flex;
+  position: relative;
+}
+.menu__container-title__heart__heart-full {
+  position: absolute;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: all;
+}
+.menu__container-title__heart__heart-full:hover {
+  opacity: 1;
+  color: transparent;
+  height: 23px;
+  background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .menu__paragraph {
   display: flex;
