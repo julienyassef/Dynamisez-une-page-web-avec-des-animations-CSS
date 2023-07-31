@@ -150,17 +150,16 @@ a {
   margin-left: 20px;
 }
 .menu__container-title__heart {
-  position: relative;
-  display: flex;
-  position: relative;
-  margin-right: 20px;
+  margin-right: 40px;
+}
+.menu__container-title__heart__heart-fillnone {
+  position: absolute;
 }
 .menu__container-title__heart__heart-full {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   transition-duration: 1s;
   transition-property: all;
-  background-color: red;
 }
 .menu__container-title__heart__heart-full:hover {
   opacity: 1;
@@ -224,6 +223,9 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0px 0px 10px 15px;
+}
+.menu__paragraph__card__toggle {
+  display: none;
 }
 .menu__paragraph__card__price {
   font-weight: 500;

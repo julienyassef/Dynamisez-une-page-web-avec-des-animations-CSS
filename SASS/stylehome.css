@@ -253,23 +253,24 @@ a {
   margin: 5px 0px 12px 12px;
 }
 .restaurants__wrappercard__container__card__content__divheart {
-  display: flex;
-  margin-right: 20px;
+  position: relative;
 }
 .restaurants__wrappercard__container__card__content__divheart__heart {
-  margin-top: 10px;
+  position: absolute;
 }
 .restaurants__wrappercard__container__card__content__divheart__heart-full {
   position: absolute;
-  margin-top: 10px;
-  opacity: 1;
-  transition-duration: 1s;
-  transition-property: all;
-  background-color: red;
-  height: 23px;
-  width: 23px;
-  transform: scale(1);
+  opacity: 0;
+  height: 25px;
 }
+.restaurants__wrappercard__container__card__content__divheart__heart-full:hover {
+  opacity: 1;
+  background-image: linear-gradient(180deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .thumbnail-news {
   background-color: #99E2D0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);

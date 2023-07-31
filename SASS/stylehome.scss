@@ -282,34 +282,38 @@ a {
                     margin: 5px 0px 12px 12px;
                 }
                 &__divheart {
-                    display: flex;
-                    margin-right: 20px;
+                    position: relative;
+                    // display: flex;
+                    // margin-right: 20px;
                     // width: 23px;
                     // height: 23px;
                     // background-image: linear-gradient(180deg, $primary, $secondaire);
                     &__heart {
-                        margin-top: 10px;
+                        position: absolute;
+                        // margin-top: 20px;
+                        // transform-origin: 50% 50%;
                     }
                     &__heart-full {
                         position: absolute;
-                        margin-top: 10px;
-                        opacity: 1;
-                        transition-duration: 1s;
-                        transition-property: all;
-                        background-color: red;
-                        height: 23px;
-                        width: 23px;
-                        transform: scale(1);
+                        // margin-top: 20px;
+                        opacity: 0;
+                        // transition-duration: 1s;
+                        // transition-property: all;
+                        // color: transparent;
+                        height: 25px;
+                        // width: 25px;
+                        // transform: scale(1);
                         &:hover {
+                            opacity: 1;
+                            background-image: linear-gradient(180deg, $primary, $secondaire);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            // transform: scale(1);
+                            color: transparent;
+                            // transform-origin: 50% 50%;
                             
-                            // opacity: 1;
-                            // color: transparent;
-                            // height: 23px;
-                            // width: 23px;
+                           
                             // margin-bottom: 100px;
-                            // background-image: linear-gradient(180deg, $primary, $secondaire);
-                            // background-clip: text;
-                            // -webkit-background-clip: text;
                         }
                     } 
                  }
