@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --text: "Roboto";
   --text__logo-and-title: "shrikhand";
@@ -67,67 +68,6 @@ a {
     opacity: 1;
   }
 }
-.menu__paragraph-entree {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 1s;
-}
-.menu__paragraph-plats {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 5s;
-}
-.menu__paragraph-desserts {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 10s;
-}
-.menu__paragraph__card-1 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 3s;
-}
-.menu__paragraph__card-2 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 4s;
-}
-.menu__paragraph__card-3 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 5s;
-}
-.menu__paragraph__card-4 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 7s;
-}
-.menu__paragraph__card-5 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 8s;
-}
-.menu__paragraph__card-6 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 9s;
-}
-.menu__paragraph__card-7 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 12s;
-}
-.menu__paragraph__card-8 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 13s;
-}
-.menu__paragraph__card-9 {
-  opacity: 1;
-  animation-name: fade-in;
-  animation-duration: 14s;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -154,9 +94,11 @@ a {
 }
 .menu__container-title__heart__heart-fillnone {
   position: absolute;
+  margin-top: -8px;
 }
 .menu__container-title__heart__heart-full {
   position: absolute;
+  margin-top: -8px;
   opacity: 0;
   transition-duration: 1s;
   transition-property: all;
@@ -166,6 +108,8 @@ a {
   color: transparent;
   height: 23px;
   background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+  background-size: cover;
+  background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -188,6 +132,7 @@ a {
 }
 .menu__paragraph__card {
   border-radius: 15px;
+  position: relative;
   overflow: hidden;
   background-color: #FFF;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
@@ -196,6 +141,76 @@ a {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+}
+.menu__paragraph__card-1 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+}
+.menu__paragraph__card-2 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+}
+.menu__paragraph__card-3 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+}
+.menu__paragraph__card-4 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+}
+.menu__paragraph__card-5 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+.menu__paragraph__card-6 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+}
+.menu__paragraph__card-7 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 2.1s;
+}
+.menu__paragraph__card-8 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+}
+.menu__paragraph__card-9 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 2.7s;
+}
+.menu__paragraph__card-10 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 3s;
 }
 .menu__paragraph__card__wrapper {
   display: flex;
@@ -231,22 +246,36 @@ a {
   font-weight: 500;
   margin-top: 40px;
   padding-right: 15px;
+  transition: 0.3s;
 }
 .menu__paragraph__card__wrapperprice {
   display: flex;
   align-items: center;
   background-color: #99E2D0;
-  margin-right: -60px;
+  position: absolute;
+  right: -60px;
   transition: 0.3s;
 }
 .menu__paragraph__card__wrapperprice__bell {
   display: inline-block;
 }
 .menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapperprice {
-  margin-right: 0;
+  right: 0;
+}
+.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapper .menu__paragraph__card__price {
+  margin-right: 60px;
+}
+.menu__paragraph__card__toggle:checked ~ .menu__paragraph__card__wrapper .menu__paragraph__card__content {
+  width: calc(80% - 60px);
 }
 .menu__paragraph__card:hover > .menu__paragraph__card__wrapperprice {
-  margin-right: 0;
+  right: 0;
+}
+.menu__paragraph__card:hover .menu__paragraph__card__price {
+  margin-right: 60px;
+}
+.menu__paragraph__card:hover .menu__paragraph__card__content {
+  width: calc(80% - 60px);
 }
 .menu__btn {
   display: flex;
@@ -340,9 +369,6 @@ a {
     gap: 20px;
     justify-content: center;
   }
-  .menu__container-title__heart {
-    margin: 12px 0px 0px 0px;
-  }
   .menu__paragraph {
     align-items: center;
   }
@@ -375,9 +401,6 @@ a {
   .menu__container-title {
     gap: 20px;
     justify-content: center;
-  }
-  .menu__container-title__heart {
-    margin: 12px 0px 0px 0px;
   }
   .menu__paragraph {
     align-items: center;
@@ -417,4 +440,9 @@ a {
   .photo__restaurant {
     max-width: 1440px;
   }
+}
+/* FIXES */
+/* régle le probleme avec l'icon de font awesome et réaligne le background*/
+.fa-xl {
+  line-height: 1 !important;
 }/*# sourceMappingURL=stylemenu.css.map */
