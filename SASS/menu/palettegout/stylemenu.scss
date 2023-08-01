@@ -92,72 +92,7 @@ a {
     }
   }
 
- .menu {
-    &__paragraph-entree {
-        opacity: 1;
-        animation-name: fade-in;
-        animation-duration: 1s; 
-    }
-    &__paragraph-plats {
-        opacity: 1;
-        animation-name: fade-in;
-        animation-duration: 5s; 
-    }
-    &__paragraph-desserts {
-        opacity: 1;
-        animation-name: fade-in;
-        animation-duration: 10s; 
-    }
-    &__paragraph {
-        &__card-1 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 3s;   
-        }
-        &__card-2 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 4s;   
-        }
-        &__card-3 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 5s;   
-        }
-        &__card-4 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 7s;   
-        }
-        &__card-5 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 8s;   
-        }
-        &__card-6 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 9s;   
-        }
-        &__card-7 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 12s;   
-        }
-        &__card-8 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 13s;   
-        }
-        &__card-9 {
-            opacity: 1;
-            animation-name: fade-in;
-            animation-duration: 14s;   
-        }    
-     } 
- }
-
-        // body menu    
+// body menu    
 
 .menu {
     display: flex;
@@ -195,6 +130,8 @@ a {
                     color: transparent;
                     height: 23px;
                     background-image: linear-gradient(100deg, $primary, $secondaire);
+                    background-size: cover;
+                    background-position: center;
                     background-clip: text;
                     -webkit-background-clip: text;
                 }
@@ -221,6 +158,7 @@ a {
         }
         &__card {
             border-radius: 15px;
+            position: relative;
             overflow: hidden;
             background-color: $white;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
@@ -229,6 +167,19 @@ a {
             display: flex;
             justify-content: space-between;   
             cursor: pointer;
+
+
+            @for $i from 1 through 10 {
+                &-#{$i} {
+                    opacity: 0;
+                    animation-fill-mode: forwards;
+                    animation-name: fade-in;
+                    animation-duration: 1s;
+                    animation-delay: #{$i * 0.3}s;
+                }
+            }
+
+
             &__wrapper {
                 display: flex;
                 justify-content: space-between;
@@ -263,22 +214,37 @@ a {
                 font-weight: 500;
                 margin-top: 40px;
                 padding-right: 15px;
+                transition: 0.3s;
             }
             &__wrapperprice {
                 display: flex;
                 align-items: center;
                 background-color: $tertiaire;
-                margin-right: -60px;
+                position: absolute;
+                right: -60px;
                 transition: 0.3s;
                 &__bell {
                  display: inline-block;
                 }
             }
             &__toggle:checked ~ &__wrapperprice {
-                margin-right: 0;
+                right: 0;
             }
+            &__toggle:checked ~ &__wrapper &__price {
+                margin-right: 60px;
+            }
+            &__toggle:checked ~ &__wrapper &__content {
+                width: calc(80% - 60px);
+            }
+
             &:hover > &__wrapperprice {
-                margin-right: 0;
+                right: 0;
+            }
+            &:hover &__price {
+                margin-right: 60px;
+            }
+            &:hover &__content {
+                width: calc(80% - 60px);
             }
         }
     }
@@ -481,4 +447,11 @@ a {
         }
     }
 
+}
+
+
+/* FIXES */
+/* font awesome c'est nul */
+.fa-xl {
+    line-height: 1
 }
