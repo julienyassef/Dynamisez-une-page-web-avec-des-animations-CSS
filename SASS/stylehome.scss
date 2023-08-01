@@ -282,9 +282,8 @@ a {
                     margin: 5px 0px 12px 12px;
                 }
                 &__divheart {
-                    margin-right: 40px;
-                    
-                   
+                    margin-right: 25px;
+                    display: flex;
                     &__heart-fillnone {
                         position: absolute;
                     }
@@ -448,7 +447,7 @@ a {
             margin-bottom: 10px;  
         }
         &__btn {
-            margin-bottom: -30px;  
+            margin-bottom: -30px; 
         }
     }
        
@@ -456,14 +455,19 @@ a {
 
     .functioning {
         &__title { 
-        margin-left: 20px;
+        margin-left: 80px;
         }
         &__filter {
             flex-direction: row ;
             justify-content: center; 
+            gap: 10px;
+            &__btn {
+                padding-left: 30px;
+                padding-right: 10px;
+                gap: 10px;
+            }   
         }
     }
-
          // section restaurants Desktop version
 
     .restaurants {
