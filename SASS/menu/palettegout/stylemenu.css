@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --text: "Roboto";
   --text__logo-and-title: "shrikhand";
@@ -93,9 +94,11 @@ a {
 }
 .menu__container-title__heart__heart-fillnone {
   position: absolute;
+  margin-top: -8px;
 }
 .menu__container-title__heart__heart-full {
   position: absolute;
+  margin-top: -8px;
   opacity: 0;
   transition-duration: 1s;
   transition-property: all;
@@ -366,9 +369,6 @@ a {
     gap: 20px;
     justify-content: center;
   }
-  .menu__container-title__heart {
-    margin: 12px 0px 0px 0px;
-  }
   .menu__paragraph {
     align-items: center;
   }
@@ -401,9 +401,6 @@ a {
   .menu__container-title {
     gap: 20px;
     justify-content: center;
-  }
-  .menu__container-title__heart {
-    margin: 12px 0px 0px 0px;
   }
   .menu__paragraph {
     align-items: center;
@@ -445,7 +442,7 @@ a {
   }
 }
 /* FIXES */
-/* font awesome c'est nul */
+/* régle le probleme avec l'icon de font awesome et réaligne le background*/
 .fa-xl {
-  line-height: 1;
+  line-height: 1 !important;
 }/*# sourceMappingURL=stylemenu.css.map */
