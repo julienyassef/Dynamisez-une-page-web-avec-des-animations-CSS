@@ -256,6 +256,20 @@ a {
 .restaurants__wrappercard__container__card__content__divheart {
   margin-right: 25px;
   display: flex;
+  cursor: pointer;
+}
+.restaurants__wrappercard__container__card__content__divheart__checkbox {
+  display: none;
+}
+.restaurants__wrappercard__container__card__content__divheart__checkbox:checked ~ .restaurants__wrappercard__container__card__content__divheart__heart-full {
+  opacity: 1;
+  color: transparent;
+  height: 23px;
+  background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .restaurants__wrappercard__container__card__content__divheart__heart-fillnone {
   position: absolute;
@@ -263,7 +277,7 @@ a {
 .restaurants__wrappercard__container__card__content__divheart__heart-full {
   position: absolute;
   opacity: 0;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transition-property: all;
 }
 .restaurants__wrappercard__container__card__content__divheart__heart-full:hover {
