@@ -253,6 +253,7 @@ a {
     gap: 18px;
     margin-bottom: 70px;
     &__container {
+        position: relative;
         &__card {
             width: 100%;
             display: flex;
@@ -282,9 +283,12 @@ a {
                     margin: 5px 0px 12px 12px;
                 }
                 &__divheart {
+                    position: absolute;
                     margin-right: 25px;
                     display: flex;
                     cursor: pointer;
+                    bottom: 24px;
+                    right: 10px;
                     &__checkbox {
                         display: none;
                     }
