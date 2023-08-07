@@ -434,9 +434,8 @@ a {
     height: 251px;
     margin-bottom: 30px;
   }
-  .restaurants__wrappercard__container__divheart__heart {
-    bottom: 35px;
-    right: 30px;
+  .restaurants__wrappercard__container__card__content__divheart {
+    bottom: -30px;
   }
   .footer {
     display: flex;
