@@ -156,6 +156,13 @@ a {
   justify-content: space-between;
   cursor: pointer;
 }
+.menu__paragraph__card label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .menu__paragraph__card-1 {
   opacity: 0;
   animation-fill-mode: forwards;
@@ -245,6 +252,7 @@ a {
   overflow: hidden;
   padding: 10px 0px 0px 15px;
   text-overflow: ellipsis;
+  margin: 0;
 }
 .menu__paragraph__card__content__description {
   font-size: 17px;
@@ -252,6 +260,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0px 0px 10px 15px;
+  margin: 0;
 }
 .menu__paragraph__card__toggle {
   display: none;
